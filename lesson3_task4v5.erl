@@ -18,10 +18,6 @@ case Binary of
 	<<>> -> [<<>>, Word]
 end.
 
-%decode_value_simple(Rest, , ) ->
-%	(),
-
-
 decode_value(Binary, Value) ->
 %io:format("Binary: ~p~n", [Binary]),
 %io:format("value: ~p~n", [Value]),

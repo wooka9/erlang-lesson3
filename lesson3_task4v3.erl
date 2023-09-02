@@ -55,5 +55,3 @@ case Binary of
 	<<_/utf8, Rest/binary>> -> decode(Rest);
 	<<>> -> {}
 end.
-
-%decode(Binary) -> decode_object(Binary, [], <<>>).

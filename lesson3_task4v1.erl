@@ -2,7 +2,6 @@
 -export([decode/1]).
 
 decode(Binary) -> decode(Binary,<<>>).
-
 %io:format("Bin: ~p~n", [Bin]),
 %io:format("Sep: ~p~n", [BinSep]),
 %io:format("Word: ~p~n", [Word]),

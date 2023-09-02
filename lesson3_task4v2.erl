@@ -11,13 +11,6 @@ case Binary of
 	<<>> -> [<<>>, Word]
 end.
 
-%decode_key(Binary) ->
-%case Binary of
-%	<<" " , Rest/binary>> -> decode_key(Rest, Key);
-%	<<"\n", Rest/binary>> -> decode_key(Rest, Key);
-%	<<"'",  Rest/binary>> -> decode_unquote(Rest, <<>>)
-%end.
-
 decode_value(Binary, Value) ->
 case Binary of
 	<<" " , Rest/binary>> -> decode_value(Rest, Value);

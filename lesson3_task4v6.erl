@@ -18,10 +18,6 @@ case Binary of
 	<<>> -> [<<>>, Word]
 end.
 
-%decode_value_simple(Rest, , ) ->
-%	(),
-
-
 decode_value(Binary, Value) ->
 %io:format("Binary: ~p~n", [Binary]),
 %io:format("value: ~p~n", [Value]),
@@ -38,8 +34,8 @@ case Binary of
 end.
 
 decode_list(Binary, List) ->
-io:format("Binary: ~p~n", [Binary]),
-io:format("List: ~p~n", [List]),
+%io:format("Binary: ~p~n", [Binary]),
+%io:format("List: ~p~n", [List]),
 case Binary of
 	<<" ",  Rest/binary>> -> decode_list(Rest, List);
 	<<"\n", Rest/binary>> -> decode_list(Rest, List);
